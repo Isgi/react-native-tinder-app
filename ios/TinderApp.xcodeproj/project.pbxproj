@@ -17,7 +17,10 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* TinderAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TinderAppTests.m */; };
+		34F8A19A1B214DA7AA9A0A30 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABCA289CC5154641BAE02AA1 /* Rubik-Regular.ttf */; };
+		515258696A2D471687A9CC4B /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 014BD2DB338B4282B8897A86 /* Rubik-Medium.ttf */; };
 		664D59EBE1840C007B7E7BB2 /* libPods-TinderApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09675B24723355B707E60439 /* libPods-TinderApp-tvOSTests.a */; };
+		7A24B702D8F746189DCD6F97 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 480FC59D31D64F149019BD7E /* Rubik-Light.ttf */; };
 		B3A834F4C8DEFCFCD4572578 /* libPods-TinderApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A1E387B0C73FD27A8D7717 /* libPods-TinderApp.a */; };
 		F93A06E15D0E579F36B9F56D /* libPods-TinderAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3120A937F985F9ED3F0C6275 /* libPods-TinderAppTests.a */; };
 /* End PBXBuildFile section */
@@ -40,12 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		005BC4107AC84362AC1FC5FA /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* TinderAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TinderAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinderAppTests.m; sourceTree = "<group>"; };
+		014BD2DB338B4282B8897A86 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		05D4A6EB609C43DF80A890E0 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		09675B24723355B707E60439 /* libPods-TinderApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TinderApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4CFFCF5EA868852BA17687 /* Pods-TinderApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-TinderApp-tvOS/Pods-TinderApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0E886E8594C94826A7E50A5B /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TinderApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TinderApp/AppDelegate.m; sourceTree = "<group>"; };
@@ -53,20 +60,36 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TinderApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TinderApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TinderApp/main.m; sourceTree = "<group>"; };
+		2AAB0A274A3847F1B82CF401 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* TinderApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TinderApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* TinderApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TinderApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F4D26DFEDB26C5E11E540EB /* libPods-TinderApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TinderApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3120A937F985F9ED3F0C6275 /* libPods-TinderAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TinderAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		339B7A572CCA04D8F37569D5 /* Pods-TinderAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TinderAppTests/Pods-TinderAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		33C45AECBEFBF3F4C303DC26 /* Pods-TinderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderApp.debug.xcconfig"; path = "Target Support Files/Pods-TinderApp/Pods-TinderApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3810F881A4CC4374802F9FEE /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		3BA33747E793F0D0F3BDE0A9 /* Pods-TinderAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderAppTests.release.xcconfig"; path = "Target Support Files/Pods-TinderAppTests/Pods-TinderAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		431112203FAF4CD6BD498B25 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		480FC59D31D64F149019BD7E /* Rubik-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.ttf"; path = "../assets/fonts/Rubik-Light.ttf"; sourceTree = "<group>"; };
+		4972669E03964CF4B48D111C /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		5654EF953537165011BCFF71 /* Pods-TinderApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-TinderApp-tvOS/Pods-TinderApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		7B5271A52C6F420DADFADAE2 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		7E9FD730F4D5B64EBC331538 /* Pods-TinderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderApp.release.xcconfig"; path = "Target Support Files/Pods-TinderApp/Pods-TinderApp.release.xcconfig"; sourceTree = "<group>"; };
+		848D1DC7EBA54E6ABAF925D3 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		85A1E387B0C73FD27A8D7717 /* libPods-TinderApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TinderApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABCA289CC5154641BAE02AA1 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		AF943089F8F8493780633EDF /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		B0EAF5934B5B4B9FA7A64678 /* Alata-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Alata-Regular.ttf"; path = "../assets/fonts/Alata-Regular.ttf"; sourceTree = "<group>"; };
 		C17A1ECC8DBA803FEBDD9655 /* Pods-TinderApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-TinderApp-tvOSTests/Pods-TinderApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5B06C5045CC45CEB2C8DAFA /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		E351118BA9D1660C4A9813E6 /* Pods-TinderApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-TinderApp-tvOSTests/Pods-TinderApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E631F62C50EB4F93B02AA380 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		E673565C5E994E3399E4070B /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		ECA916C68BB14975B2C83C76 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		ED0DD66ECDD54D49BFDE985D /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		F29C0C720D93414DB40100AA /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +188,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				B4682618EB753959D5EF48C1 /* Pods */,
+				EC254AD3674247A7AF1F03BF /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -194,8 +218,34 @@
 				339B7A572CCA04D8F37569D5 /* Pods-TinderAppTests.debug.xcconfig */,
 				3BA33747E793F0D0F3BDE0A9 /* Pods-TinderAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC254AD3674247A7AF1F03BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				005BC4107AC84362AC1FC5FA /* AntDesign.ttf */,
+				E673565C5E994E3399E4070B /* Entypo.ttf */,
+				ED0DD66ECDD54D49BFDE985D /* EvilIcons.ttf */,
+				848D1DC7EBA54E6ABAF925D3 /* Feather.ttf */,
+				05D4A6EB609C43DF80A890E0 /* FontAwesome.ttf */,
+				0E886E8594C94826A7E50A5B /* FontAwesome5_Brands.ttf */,
+				E631F62C50EB4F93B02AA380 /* FontAwesome5_Regular.ttf */,
+				F29C0C720D93414DB40100AA /* FontAwesome5_Solid.ttf */,
+				AF943089F8F8493780633EDF /* Fontisto.ttf */,
+				3810F881A4CC4374802F9FEE /* Foundation.ttf */,
+				7B5271A52C6F420DADFADAE2 /* Ionicons.ttf */,
+				4972669E03964CF4B48D111C /* MaterialCommunityIcons.ttf */,
+				2AAB0A274A3847F1B82CF401 /* MaterialIcons.ttf */,
+				ECA916C68BB14975B2C83C76 /* Octicons.ttf */,
+				C5B06C5045CC45CEB2C8DAFA /* SimpleLineIcons.ttf */,
+				431112203FAF4CD6BD498B25 /* Zocial.ttf */,
+				B0EAF5934B5B4B9FA7A64678 /* Alata-Regular.ttf */,
+				480FC59D31D64F149019BD7E /* Rubik-Light.ttf */,
+				014BD2DB338B4282B8897A86 /* Rubik-Medium.ttf */,
+				ABCA289CC5154641BAE02AA1 /* Rubik-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,7 +336,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -309,6 +359,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -339,6 +390,9 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				7A24B702D8F746189DCD6F97 /* Rubik-Light.ttf in Resources */,
+				515258696A2D471687A9CC4B /* Rubik-Medium.ttf in Resources */,
+				34F8A19A1B214DA7AA9A0A30 /* Rubik-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
