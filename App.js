@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StatusBar } from 'react-native';
-import { Button, IconButton, configureFonts, DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
+import { Button, IconButton, configureFonts, DefaultTheme, DarkTheme, Provider as PaperProvider } from 'react-native-paper';
 import { NavigationNativeContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
@@ -38,8 +38,8 @@ const fontConfig = {
 };
 
 const theme = {
-  ...DefaultTheme,
-  fonts: configureFonts(fontConfig),
+  ...DarkTheme,
+  fonts: configureFonts(fontConfig)
 };
 
 const TabTop = () => (
@@ -54,18 +54,21 @@ export default function App() {
   return (
     <NavigationNativeContainer>
       <PaperProvider theme={theme}>
-        <StatusBar barStyle="dark-content" backgroundColor="#ffffff" />
+        <StatusBar barStyle={theme.dark ? "light-content" : "dark-content"} backgroundColor={theme.colors.surface} />
         <Stack.Navigator
           screenOptions={{
+            mode: 'modal',
             headerBackTitleVisible: false,
             headerTitleAlign: 'center',
             headerStyle: { 
               elevation: 0,
               borderBottomColor: theme.colors.placeholder,
-              borderBottomWidth: 0.5
+              backgroundColor: theme.colors.surface,
+              borderBottomWidth: 0.2
             },
+            cardStyle: { backgroundColor: theme.colors.background },
             headerRightContainerStyle: { paddingRight: 15 },
-            headerTitleStyle: { fontFamily: 'Rubik-Regular' },
+            headerTitleStyle: { fontFamily: 'Rubik-Regular', color: theme.colors.text },
             headerLeft: ({ onPress }) => {
               if (onPress) {
                 return <IconButton
@@ -82,24 +85,12 @@ export default function App() {
           <Stack.Screen
             name="Splash"
             component={SplashScreen} 
-            options={{
-              headerShown: false,
-            }}
+            options={{ headerShown: false }}
           />
           <Stack.Screen
             name="Register"
             component={RegisterScreen} 
-            options={({ navigation }) => ({
-              title: 'Register',
-              headerRight: () => (
-                <Button mode="text" uppercase={false}
-                  labelStyle={{ letterSpacing: 0, fontWeight: 'normal' }}
-                  onPress={() => navigation.push('Login')}
-                >
-                  Login here
-                </Button>
-              )
-            })}
+            options={{ title: 'Register' }}
           />
           <Stack.Screen
             name="Login"
@@ -109,9 +100,7 @@ export default function App() {
           <Stack.Screen
             name="TabTop"
             component={TabTop} 
-            options={{
-              headerShown: false
-            }}
+            options={{ headerShown: false }}
           />
         </Stack.Navigator>
       </PaperProvider>
